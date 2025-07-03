@@ -47,3 +47,12 @@ Este modo reinicia, borra la memoria flash y carga el nuevo firmware. Para salir
 idf.py -p /dev/ttyACM0 build flash monitor
 ```
 
+# CLEAN
+```
+idf.py clean
+```
+Cuando compilas ESP-IDF crea un directorio llamado build/ dentro de la raíz de tu proyecto. Este directorio contiene: archivos objeto (.o), bibliotecas estáticas (.a), archivos ejecutables (.elf), archivos de caché de CMake, archivos de registro (logs) y Otros archivos intermedios.
+
+idf.py clean se encarga de eliminar la mayoría de estos archivos generados dentro del directorio build/.
+
+
