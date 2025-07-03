@@ -44,6 +44,6 @@ idf.py -p /dev/ttyACM0 build monitor
 ## MODO BUILD FLASH MONITOR
 Este modo reinicia, borra la memoria flash y carga el nuevo firmware. Para salir del modo monitor pulsa ctrl+]
 ```
-idf.py -p /dev/ttyACM0 build monitor
+idf.py -p /dev/ttyACM0 build flash monitor
 ```
 
