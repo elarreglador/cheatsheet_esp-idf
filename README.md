@@ -26,3 +26,9 @@ idf.py --version
 ESP-IDF v5.3.3-927-gbf79937908
 ```
 
+## MODO MONITOR
+
+Para salir del modo monitor pulsa ctrl+]
+```
+idf.py -p /dev/ttyACM0 monitor
+```
