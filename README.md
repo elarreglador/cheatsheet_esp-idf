@@ -28,7 +28,20 @@ ESP-IDF v5.3.3-927-gbf79937908
 
 ## MODO MONITOR
 
-Para salir del modo monitor pulsa ctrl+]
+Este modo reinicia el chip y muestra el debug. Para salir del modo monitor pulsa ctrl+]
 ```
 idf.py -p /dev/ttyACM0 monitor
 ```
+
+## MODO BUILD MONITOR
+Este modo reinicia y carga el nuevo firmware. Para salir del modo monitor pulsa ctrl+]
+```
+idf.py -p /dev/ttyACM0 build monitor
+```
+
+## MODO BUILD FLASH MONITOR
+Este modo reinicia, borra la memoria flash y carga el nuevo firmware. Para salir del modo monitor pulsa ctrl+]
+```
+idf.py -p /dev/ttyACM0 build monitor
+```
+
