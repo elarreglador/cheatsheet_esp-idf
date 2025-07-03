@@ -1,3 +1,5 @@
+![Banner](./assets/banner.png)
+
 ## INSTALACION Y SELECCION DE VERSION
 
 Busca la release que quieras instalar y clonala en un directorio indicando la version, es posible que mas adelante necesites una version especifica para algun codigo concreto. Normalmente puedes encontrar esta info en las primeras lineas del archivo sdkconfig del proyecto
