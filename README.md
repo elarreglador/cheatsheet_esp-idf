@@ -55,4 +55,11 @@ Cuando compilas ESP-IDF crea un directorio llamado build/ dentro de la raíz de 
 
 idf.py clean se encarga de eliminar la mayoría de estos archivos generados dentro del directorio build/.
 
+# CONFIGURACION DEL ESP32
+
+Para acceder al menu de configuracion del chip debemos usar este comando:
+
+```
+idf.py menuconfig
+```
 
