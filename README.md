@@ -36,7 +36,7 @@ Lanza el export que consideres adecuado, generalmente la ultima version:
 
 Copia un proyecto de ejemplo en la ruta que consideres:
 ```
-cp -r $IDF_PATH/examples/get-started/hello_world ./mi_nuevo_proyecto
+cp -r $IDF_PATH/examples/get-started/hello_world/ ./mi_nuevo_proyecto
 cd mi_nuevo_proyecto
 ```
 
