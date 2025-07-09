@@ -50,6 +50,11 @@ Ajusta configuracion del chip
 idf.py menuconfig
 ```
 
+Cambia el nombre de proyecto en CMakeList.txt en raiz de proyecto
+```
+project(hello_world)
+```
+
 ## MODO MONITOR
 
 Este modo reinicia el chip y muestra el debug. Para salir del modo monitor pulsa ctrl+]
@@ -77,3 +82,34 @@ Cuando compilas ESP-IDF crea un directorio llamado build/ dentro de la raíz de 
 
 idf.py clean se encarga de eliminar la mayoría de estos archivos generados dentro del directorio build/.
 
+## MENSAJES DE LOG
+
+```
+I (188) app_init: Project name:     hello_world
+```
+Nombre de proyecto, cambialo desde CMakeList.txt en raiz de proyecto
+
+```
+I (193) app_init: App version:      844901e-dirty
+```
+Indica la versión de tu aplicación que se está ejecutando. Este formato de versión es muy común en proyectos que usan Git (el sistema de control de versiones) para gestionar su código, como es el caso de los proyectos ESP-IDF.
+
+ - 844901e: Esta parte es un hash corto de Git. Representa el identificador único del commit (o "instantánea" del código) que se usó para construir tu firmware. Es una forma de saber exactamente qué versión de tu código fuente se compiló y se cargó en tu ESP.
+
+ - dirty: Este sufijo es crucial. Indica que tu repositorio de Git no estaba "limpio" cuando se compiló el firmware. Un repositorio "sucio" significa que había cambios locales sin confirmar (sin git commit) en tus archivos cuando compilaste el proyecto.
+
+```
+I (210) app_init: ESP-IDF:          v5.4-dev-3489-g6e5a178b31
+```
+versión de ESP-IDF con la que fue compilada tu aplicación
+
+```
+W (259) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.
+```
+Tu ESP ha detectado físicamente que la memoria Flash conectada es de 4096 KB (4 MB). Esto es lo que el hardware ha leído del chip de memoria Flash, solucionalo con idf.py menuconfig
+
+
+```
+I (297) main_task: Calling app_main()
+```
+el sistema ha completado todas las inicializaciones de bajo nivel y ahora está a punto de llamar a tu aplicacion
