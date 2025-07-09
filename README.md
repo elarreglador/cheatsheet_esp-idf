@@ -28,6 +28,28 @@ idf.py --version
 ESP-IDF v5.3.3-927-gbf79937908
 ```
 
+## CREAR NUEVO PROYECTO
+Lanza el export que consideres adecuado, generalmente la ultima version:
+```
+. $HOME/esp/esp-idf-5.4/export.sh
+```
+
+Copia un proyecto de ejemplo en la ruta que consideres:
+```
+cp -r $IDF_PATH/examples/get-started/hello_world ./mi_nuevo_proyecto
+cd mi_nuevo_proyecto
+```
+
+Seleccionar el tipo de chip:
+```
+idf.py set-target esp32-h2       # O esp32s3, esp32c3, etc.
+```
+
+Ajusta configuracion del chip
+```
+idf.py menuconfig
+```
+
 ## MODO MONITOR
 
 Este modo reinicia el chip y muestra el debug. Para salir del modo monitor pulsa ctrl+]
@@ -47,19 +69,11 @@ Este modo reinicia, borra la memoria flash y carga el nuevo firmware. Para salir
 idf.py -p /dev/ttyACM0 build flash monitor
 ```
 
-# CLEAN
+## CLEAN
 ```
 idf.py clean
 ```
 Cuando compilas ESP-IDF crea un directorio llamado build/ dentro de la raíz de tu proyecto. Este directorio contiene: archivos objeto (.o), bibliotecas estáticas (.a), archivos ejecutables (.elf), archivos de caché de CMake, archivos de registro (logs) y Otros archivos intermedios.
 
 idf.py clean se encarga de eliminar la mayoría de estos archivos generados dentro del directorio build/.
-
-# CONFIGURACION DEL ESP32
-
-Para acceder al menu de configuracion del chip debemos usar este comando:
-
-```
-idf.py menuconfig
-```
 
