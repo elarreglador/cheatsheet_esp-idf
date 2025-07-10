@@ -1,5 +1,22 @@
 ![Banner](./assets/banner.png)
 
+## DEVELOPMENT KITS
+<table>
+ <tr>
+  <td>
+   <img src="https://espressif-docs.readthedocs-hosted.com/projects/esp-dev-kits/en/latest/_images/esp32-h2-devkitm-1-45-20230303.png" width="300" height="auto">
+   <br>
+   ESP32-H2-DevKitM-1 <br> https://espressif-docs.readthedocs-hosted.com/projects/esp-dev-kits/en/latest/esp32h2/esp32-h2-devkitm-1/user_guide.html
+  </td>
+  <td>
+   <img src="https://espressif-docs.readthedocs-hosted.com/projects/esp-dev-kits/en/latest/_images/esp32-c6-devkitc-1-isometric_v1.2.png" width="300" height="auto">
+   <br>
+   ESP32-C6-DevKitC-1 v1.2 <br> https://espressif-docs.readthedocs-hosted.com/projects/esp-dev-kits/en/latest/esp32c6/esp32-c6-devkitc-1/user_guide.html
+  </td>
+ </tr>
+
+</table>
+
 ## INSTALACION Y SELECCION DE VERSION
 
 Busca la release que quieras instalar y clonala en un directorio indicando la version, es posible que mas adelante necesites una version especifica para algun codigo concreto. Normalmente puedes encontrar esta info en las primeras lineas del archivo sdkconfig del proyecto
